@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="design3.css">
+        <title>Policía</title>
+    </head>
+
+    <body>
+    <h2>Rellene el cuestionario sobre el robo</h2>
+        <form action="/action_page.php">
+            <fieldset>
+             <legend><b>Información general</b></legend>
+             <!-- Fecha del robo -->
+             <label for="birthday">Fecha del robo:</label>
+             <input type="date" id="fecha" name="fecha">
+             <input type="submit" value="Confirmar"><br><br>
+             <!-- Hora del suceso -->
+             <label for="appt">Indique la hora del suceso:</label>
+             <input type="time" id="hour" name="hour">
+             <input type="submit" value="Confirmar"><br><br>
+             <!-- Valor de la bici -->
+             <label for="vol">Valor de la bici (0 - 1000$):</label>
+             <input type="range" id="vol" name="vol" min="0" max="1000">
+             <input type="submit" value="Confirmar"><br><br><br>
+            </fieldset><br>
+            <!-- Tipo de bicicleta -->
+            <fieldset>
+                <legend><b>Indique el tipo de bicicleta:</b></legend>
+            <dt>
+                <input type="radio" id="paseo" name="tipo_bici" value="paseo">
+                <label for="paseo">Paseo</label><br>
+            </dt>
+                    <dd><input type="checkbox" id="señorial" name="tipo_bici" value="señorial">
+                        <label for="señorial">Señorial</label><br></dd>
+                    <dd><input type="checkbox" id="de_campo" name="tipo_bici" value="de_campo">
+                        <label for="de_campo">De campo</label><br></dd>
+                    <dd><input type="checkbox" id="deciudad" name="tipo_bici" value="deciudad">
+                        <label for="deciudad">De ciudad</label><br></dd>
+            <dt>
+                <input type="radio" id="montaña" name="tipo_bici" value="montaña">
+                <label for="montaña">Montaña</label><br>
+            </dt>
+            <dd><input type="checkbox" id="colinas" name="tipo_bici" value="colinas">
+                <label for="colinas">Colinas</label><br></dd>
+            <dd><input type="checkbox" id="medianas" name="tipo_bici" value="medianas">
+                <label for="medianas">Medianas</label><br></dd>
+            <dd><input type="checkbox" id="altas" name="tipo_bici" value="altas">
+                <label for="altas">Altas</label><br></dd>
+
+            <dt>
+                <input type="radio" id="carreras" name="tipo_bici" value="carreras">
+                <label for="carreras">Carreras</label><br>
+            </dt>
+                <dd><input type="checkbox" id="eliminacion" name="tipo_bici" value="eliminacion">
+                    <label for="eliminacion">Eliminación</label><br></dd>
+                <dd><input type="checkbox" id="keirin" name="tipo_bici" value="keirin">
+                    <label for="keirin">Keirin</label><br></dd>
+                <dd><input type="checkbox" id="madison" name="tipo_bici" value="madison">
+                    <label for="madison">Madison</label></dd>
+            </fieldset><br>
+            <!-- Accesorios de la bici -->
+            <fieldset>
+            <legend><b>¿Su bicicleta cuenta con accesorios?</b></legend>
+
+            <input type="checkbox" id="ruedines" name="tipo_bici" value="ruedines">
+            <label for="ruedines">Ruedines</label><br>
+
+            <input type="checkbox" id="pegatinas" name="tipo_bici" value="pegatinas">
+            <label for="pegatinas">Pegatinas</label><br>
+            
+            <input type="checkbox" id="cestita" name="tipo_bici" value="cestita">
+            <label for="cestita">Cestita</label><br>
+
+            <input type="checkbox" id="bomba_de_aire" name="tipo_bici" value="bomba_de_aire">
+            <label for="bomba_de_aire">Bomba de Aire</label><br>
+
+            <input type="checkbox" id="timbre" name="tipo_bici" value="timbre">
+            <label for="timbre">Timbre</label><br>
+
+            <input type="checkbox" id="foco" name="tipo_bici" value="foco">
+            <label for="foco">Foco</label>
+            </fieldset>
+        </form>
+            <!-- Marca -->
+        <fieldset><br>
+            <legend><b>Indique la marca, por favor:</b></legend>
+            <select name="transporte">
+                <option>Specialized</option>
+                <option>Scott</option>
+                <option>Trek</option>
+                <option>Giant</option>
+                <option>Canyon</option>
+                <option>Cannondale</option>
+                <option>Orbea</option>
+                <option>BMC</option>
+                <option>Pinarello</option>
+                <option>Bianchi</option>
+                <option>Felt</option>
+                <option>Yeti</option>
+                <option>Santa Cruz</option>
+                <option>DiamondBack</option>
+                <option>Fuji</option>
+                <option>Cervelo</option>
+                <option>Kona</option>
+            </select>
+            <input type="submit" value="Confirmar"><br>
+        </fieldset>
+        </form>
+    </body>
+</html>
