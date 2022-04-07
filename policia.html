@@ -13,7 +13,8 @@
              <!-- Fecha del robo -->
              <label for="birthday">Fecha del robo:</label>
              <input type="date" id="fecha" name="fecha">
-             <input type="submit" value="Confirmar"><br><br>
+             <input type="submit" value="Confirmar">
+             <br><br>
              <!-- Hora del suceso -->
              <label for="appt">Indique la hora del suceso:</label>
              <input type="time" id="hour" name="hour">
@@ -22,8 +23,10 @@
              <label for="vol">Valor de la bici (0 - 1000$):</label>
              <input type="range" id="vol" name="vol" min="0" max="1000">
              <input type="submit" value="Confirmar"><br><br><br>
-            </fieldset><br>
+            </fieldset>
+        </form><br>
             <!-- Tipo de bicicleta -->
+        <form action="/action_page.php">
             <fieldset>
                 <legend><b>Indique el tipo de bicicleta:</b></legend>
             <dt>
@@ -57,8 +60,10 @@
                     <label for="keirin">Keirin</label><br></dd>
                 <dd><input type="checkbox" id="madison" name="tipo_bici" value="madison">
                     <label for="madison">Madison</label></dd>
-            </fieldset><br>
+            </fieldset>
+            </form><br>
             <!-- Accesorios de la bici -->
+            <form action="/action_page.php">
             <fieldset>
             <legend><b>¿Su bicicleta cuenta con accesorios?</b></legend>
 
@@ -82,6 +87,7 @@
             </fieldset>
         </form>
             <!-- Marca -->
+        <form action="/action_page.php">
         <fieldset><br>
             <legend><b>Indique la marca, por favor:</b></legend>
             <select name="transporte">
